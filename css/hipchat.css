@@ -49,3 +49,15 @@ body.chat .tabs li a.close {
 body.chat .tabs li:hover a.close {
   display: block;
 }
+
+/*
+ * Add spacing to the chat room listing
+ */
+
+body.chat #lobby .lobby_display {
+  padding: 9px 15px;
+}
+
+body.chat #lobby hr {
+  border: none;
+}
