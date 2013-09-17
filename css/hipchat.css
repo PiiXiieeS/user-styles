@@ -1,0 +1,51 @@
+/*
+ * Brute force removal of all border-radii.
+ */
+
+* {
+  border-radius: 0!important;
+}
+
+/*
+ * Flatten the date divider between chat messages
+ */
+
+#chats div.dateDivider {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: rgb(237, 237, 237);
+  border: none;
+}
+
+/*
+ * Flatten chat messages
+ */
+
+#chats div.me,
+#chats div.them,
+#chats td.nameBlock,
+#chats td.messageBlock,
+#chats div.me td.nameBlock,
+#chats div.me td.messageBlock {
+  border: none;
+}
+
+/*
+ * Add slightly more padding to chat messages
+ */
+
+#chats div.chatBlock td {
+  padding: 4px 0;
+}
+
+/*
+ * Hide the close icon on open tabs until you're hovering over them
+ */
+
+body.chat .tabs li a.close {
+  display: none;
+}
+
+body.chat .tabs li:hover a.close {
+  display: block;
+}
