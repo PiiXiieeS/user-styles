@@ -1,5 +1,10 @@
+/*
+ * Remove all rounded corners and animation
+ */
 * {
   border-radius: 0!important;
+  -webkit-transition: none!important;
+  transition: none!important;
 }
 
 .card-operation,
@@ -71,27 +76,28 @@
   height: 28px;
 }
 
-.open-card-composer {
+.open-card-composer,
+.open-card-composer:hover {
   margin: 0;
   padding: 10px 0 12px 0;
   text-align: center;
+  color: rgb(110, 175, 183);
 }
 
 .open-card-composer:hover {
-  text-decoration: none;
-  background: none;
   color: rgb(110, 175, 183);
+  background: rgba(0,0,0,0.05);
 }
 
 .board-widgets {
   background: white;
-  width: 320px;
+  width: 420px;
 }
 
 .board-wrapper.disabled-all-widgets .board-widgets {
-  -ms-transform: translateX(380px);
-  -webkit-transform: translateX(380px);
-  transform: translateX(380px);
+  -ms-transform: translateX(480px);
+  -webkit-transform: translateX(480px);
+  transform: translateX(480px);
 }
 
 .list-card.placeholder {
@@ -408,6 +414,7 @@ body.fixed-content #content {
 
 .list {
   padding-right: 0;
+  padding-bottom: 0;
   padding-left: 0;
   background: white;
 }
@@ -499,4 +506,22 @@ body.fixed-content #content {
   border: 1px solid rgb(255, 255, 255);
   padding: 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*
+ * Fix text colour on empty lists
+ */
+
+.list.add-list .placeholder,
+.list.add-list .placeholder:hover {
+  color: rgb(110, 175, 183)!important;
+}
+
+/*
+ * Hide sidebar gradients
+ */
+
+.activity-gradient-t,
+.activity-gradient-b {
+  display: none!important;
 }
