@@ -25,6 +25,10 @@
   padding: 0;
 }
 
+.list-cards:empty {
+  display: none;
+}
+
 .list-card {
   margin-bottom: 0;
   padding: 10px 8px;
